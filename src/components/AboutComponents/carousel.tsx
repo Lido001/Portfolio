@@ -5,6 +5,7 @@ import { Avatar } from "@mui/material";
 import { testimonials } from "./aboutData";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
+import img from "src/assets/images/img-7.jpg"
 
 export default () => {
   return (
@@ -50,7 +51,7 @@ export default () => {
                       <div>
                         <Avatar
                           alt=""
-                          src="src\assets\images\img-7.jpg"
+                          src={img}
                           sx={{
                             width: { xs: 40, sm: 60, md: 60 ,lg:60},
                             height: { xs: 40, sm: 60, md: 60, lg:60 },

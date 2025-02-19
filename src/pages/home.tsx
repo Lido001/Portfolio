@@ -3,6 +3,7 @@ import { GrLinkedin } from "react-icons/gr";
 import { RiInstagramFill } from "react-icons/ri";
 import Typing from "../components/HomeComponents/typewriter";
 import { motion } from "framer-motion";
+import profileimg from "../assets/images/profile.png.jpg";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
           <div className="avatar-wrapper">
             <img
               className="avatar-img w-full h-full object-cover"
-              src="src/assets/images/profile.png.jpg"
+              src={profileimg}
               alt="Profile"
             />
           </div>

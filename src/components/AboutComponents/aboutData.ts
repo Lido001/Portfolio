@@ -1,5 +1,5 @@
 
-
+import img from "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg";
 
 
 
@@ -107,24 +107,24 @@ const projects: Project [] = [
 
 
 const news: News[] = [
-  {title: "Artificial Intelligence with the power of IBM Watson.", description: "Discover the latest advancements in AI technology and how IBM Watson is revolutionizing industries with its powerful capabilities. Stay updated with our blog for more insights and news.", image: "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg"},
+  {title: "Artificial Intelligence with the power of IBM Watson.", description: "Discover the latest advancements in AI technology and how IBM Watson is revolutionizing industries with its powerful capabilities. Stay updated with our blog for more insights and news.", image: img},
   {
     title: "The Rise of Web3: Decentralization and the Future of the Internet",
     description:
       "Web3 is redefining the internet with blockchain-based solutions, decentralized finance (DeFi), and NFTs. Learn how this transformation is empowering users and reshaping online experiences.",
-      image: "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
+      image: img
   },
   {
     title: "Cybersecurity Trends in 2025: Staying Ahead of Threats",
     description:
       "With increasing cyber threats, organizations are adopting AI-driven security measures. Read about the latest cybersecurity innovations and how to protect your data in the digital era.",
-      image: "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
+      image: img
   },
   {
     title: "The Evolution of AI in Content Creation",
     description:
       "From AI-generated articles to deepfake videos, artificial intelligence is reshaping content creation. Discover how AI tools are revolutionizing journalism, marketing, and entertainment.",
-      image: "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
+      image: img,
   },
 ]
 

@@ -1,5 +1,6 @@
 import { projects } from "../AboutComponents/aboutData";
 import Readmore from "../Readmore";
+import img from "src/assets/images/Screenshot 2025-02-11 213241.png";
 
 const ProjectsGrid = () => {
   return (
@@ -12,7 +13,7 @@ const ProjectsGrid = () => {
           <div className="card flex flex-col">
             <div className="overflow-hidden rounded-t-lg">
               <img className="card-img transition duration-300" 
-                src="src\assets\images\Screenshot 2025-02-11 213241.png"
+                src={img}
                 alt=""
               />
             </div>
