@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: "/Portfolio/",
   optimizeDeps: {
     include: ["@emailjs/browser"],
   },
