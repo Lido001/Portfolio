@@ -6,7 +6,7 @@ import { PiBriefcaseFill } from "react-icons/pi";
 import { IoIosMail, IoMdMenu, IoMdClose } from "react-icons/io";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router-dom";
-import profileimg from "src/assets/images/profile.png.jpg";
+import profileImg from '../../assets/images/profile.png.jpg';
 
 export default function SideBar() {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export default function SideBar() {
           className="cursor-pointer"
           onClick={() => setIsOpen(true)}
         />
-        <Avatar alt="" src={profileimg} sx={{ width: 32, height: 32 }} />
+        <Avatar alt="" src={profileImg} sx={{ width: 32, height: 32 }} />
       </div>
 
       {/* Sidebar */}
@@ -46,7 +46,7 @@ export default function SideBar() {
           <div className="flex flex-col justify-center items-center gap-y-6 xl:pt-12">
             <Avatar
               alt=""
-              src={profileimg}
+              src={profileImg}
               sx={{
                 width: { xs: 100, sm: 80, md: 100 },
                 height: { xs: 100, sm: 80, md: 100 },

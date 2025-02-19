@@ -1,6 +1,6 @@
 import { services } from "../AboutComponents/aboutData";
 import Readmore from "../Readmore";
-
+import img1 from '../../assets/images/—Pngtree—modern flat design concept of_5332909.png';
 const ServiceGrid = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8">
@@ -9,7 +9,7 @@ const ServiceGrid = () => {
           key={index}
           className="card  flex flex-col gap-y-5 bg-(--bs-custom-service-li-bg) rounded-lg transition duration-300 pb-5">
             <div className="rounded-t-lg overflow-hidden">
-            <img className="object-contain card-img transition-transform duration-300 ease-in-out" src="src\assets\images\—Pngtree—modern flat design concept of_5332909.png" alt="" />
+            <img className="object-contain card-img transition-transform duration-300 ease-in-out" src={img1} alt="" />
             </div>
           <div className="flex flex-col p-5 gap-y-4">
             

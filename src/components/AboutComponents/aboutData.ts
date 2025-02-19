@@ -1,5 +1,5 @@
 
-import img from "src/assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg";
+import img from '../../assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg';
 
 
 

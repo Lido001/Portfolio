@@ -5,7 +5,7 @@ import { Avatar } from "@mui/material";
 import { testimonials } from "./aboutData";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
-import img from "src/assets/images/img-7.jpg"
+import img from '../../assets/images/img-7.jpg';
 
 export default () => {
   return (

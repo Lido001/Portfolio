@@ -1,6 +1,6 @@
 import { projects } from "../AboutComponents/aboutData";
 import Readmore from "../Readmore";
-import img from "src/assets/images/Screenshot 2025-02-11 213241.png";
+import img from '../../assets/images/Screenshot 2025-02-11 213241.png';
 
 const ProjectsGrid = () => {
   return (
