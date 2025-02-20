@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: "/Portfolio/",
+  base: process.env.DEPLOY_ENV === 'github' ? '/home/' : '/',
   optimizeDeps: {
     include: ["@emailjs/browser"],
   },
