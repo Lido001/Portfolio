@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Download, CheckCircle } from "lucide-react";
 import Swal from "sweetalert2";
+import resume from "/VISUAL STUDIO/PROJECTS/REACT PROJECTS/Personal Portfolio/public/Lido_CV.pdf";
 
 const SwipeButton: React.FC = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -20,7 +21,7 @@ const SwipeButton: React.FC = () => {
       if (!result.isConfirmed) return; // If user cancels, stop here
     }
 
-    const pdfUrl = "/Lido_CV.pdf"; // File should be in 'public' folder
+    const pdfUrl = resume // File should be in 'public' folder
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Lido_CV.pdf";
