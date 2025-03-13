@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { IoPerson, IoNewspaperOutline } from "react-icons/io5";
 import { TbSettingsFilled } from "react-icons/tb";
@@ -6,13 +6,12 @@ import { PiBriefcaseFill } from "react-icons/pi";
 import { IoIosMail, IoMdMenu, IoMdClose } from "react-icons/io";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router-dom";
-import profileImg from '../../assets/images/profile.png.jpg';
+import profileImg from "../../assets/images/Profile1.jpg";
 
-export default function SideBar() {
+const SideBar = () => {
   const navigate = useNavigate();
   const [active, setActive] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
-
 
   return (
     <>
@@ -52,8 +51,11 @@ export default function SideBar() {
                 height: { xs: 100, sm: 80, md: 100 },
               }}
             />
-            <h6 className="text-white font-semibold text-nowrap tracking-wider" style={{fontFamily:"nura, sans-serif"}}>
-            MERN STACK DEVELOPER
+            <h6
+              className="text-white font-semibold text-nowrap tracking-wider"
+              style={{ fontFamily: "nura, sans-serif" }}
+            >
+              MERN STACK DEVELOPER
             </h6>
           </div>
 
@@ -148,3 +150,4 @@ export default function SideBar() {
     </>
   );
 }
+export default SideBar;

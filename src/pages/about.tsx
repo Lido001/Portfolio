@@ -9,10 +9,12 @@ import aboutimg from "../assets/images/about.jpg";
 
 const About = () => {
   return (
-    <motion.div className="text-white lg:px-3"
-    initial={{ opacity: 0,x: -125 }}
-    animate={{ opacity: 1,x: 0}}
-    transition={{ duration: 1, ease: "easeInOut" }}>
+    <motion.div
+      className="text-white lg:px-3"
+      initial={{ opacity: 0, x: -125 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <header className="lg:px-28 mb-12 flex flex-col justify-center px-6">
         <div className="flex flex-col justify-self-start pt-16 lg:w-full">
           <div className="my-6">
@@ -39,10 +41,17 @@ const About = () => {
           <div className="border-1 border-custom-color border-bottom lg:my-6 my-5"></div>
           <div className="flex flex-col gap-5">
             <p className="text-custom-aboutcolor custom-p">
-            Hi, I’m Lido Shanfear, an aspiring React Developer with a strong passion for building dynamic and user-friendly web applications. Proficient in React, TypeScript, and Tailwind CSS, I focus on writing clean, efficient, and maintainable code to create seamless digital experiences.
+              Hi, I’m Lido Shanfear, an aspiring React Developer with a strong
+              passion for building dynamic and user-friendly web applications.
+              Proficient in React, TypeScript, and Tailwind CSS, I focus on
+              writing clean, efficient, and maintainable code to create seamless
+              digital experiences.
             </p>
             <p className="text-custom-aboutcolor custom-p">
-              As a fresher, I am eager to apply my skills, learn from industry experts, and contribute to innovative projects. I am looking for an opportunity to prove my abilities, grow as a developer, and make a meaningful impact in a collaborative environment.
+              As a fresher, I am eager to apply my skills, learn from industry
+              experts, and contribute to innovative projects. I am looking for
+              an opportunity to prove my abilities, grow as a developer, and
+              make a meaningful impact in a collaborative environment.
             </p>
           </div>
           <div className="border-1 border-custom-color border-bottom lg:my-6 my-5"></div>

@@ -1,20 +1,26 @@
 import { projects } from "../AboutComponents/aboutData";
 import Readmore from "../Readmore";
-import img from '../../assets/images/Screenshot 2025-02-11 213241.png';
 
-const ProjectsGrid = () => {
+interface ProjectsGridProps {
+  selectedCategory: string;
+}
+
+const ProjectsGrid: React.FC<ProjectsGridProps> = ({ selectedCategory }) => {
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
+
   return (
     <div className="grid md:grid-cols-2 gap-10 py-8 text-white">
-      {projects.map((project, index) => (
+      {filteredProjects.map((project, index) => (
         <div key={index}>
-          <h1 className="py-12 font-custom-montserrat font-semibold tracking-wide">
-            Project 0{index + 1}
-          </h1>
-          <div className="card flex flex-col">
-            <div className="overflow-hidden rounded-t-lg">
-              <img className="card-img transition duration-300" 
-                src={img}
-                alt=""
+          <div className="card flex flex-col py-5">
+            <div className="overflow-hidden rounded-t-lg h-3/4">
+              <img
+                className="card-img w-full transition duration-300"
+                src={project.image}
+                alt={project.title}
               />
             </div>
             <div className="flex flex-col gap-y-4 bg-(--bs-custom-projectgrid-bg) rounded-b-lg p-3 pb-10 pt-6">
@@ -28,7 +34,7 @@ const ProjectsGrid = () => {
                   {project.description}
                 </p>
               </div>
-              <Readmore/>
+              <Readmore />
             </div>
           </div>
         </div>

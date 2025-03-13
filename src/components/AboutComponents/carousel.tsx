@@ -5,7 +5,7 @@ import { Avatar } from "@mui/material";
 import { testimonials } from "./aboutData";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
-import img from '../../assets/images/img-7.jpg';
+import img from "../../assets/images/img-7.jpg";
 
 export default () => {
   return (
@@ -53,8 +53,8 @@ export default () => {
                           alt=""
                           src={img}
                           sx={{
-                            width: { xs: 40, sm: 60, md: 60 ,lg:60},
-                            height: { xs: 40, sm: 60, md: 60, lg:60 },
+                            width: { xs: 40, sm: 60, md: 60, lg: 60 },
+                            height: { xs: 40, sm: 60, md: 60, lg: 60 },
                             filter: "grayscale(1) contrast(1.5) brightness(1)",
                             mixBlendMode: "multiply",
                           }}
@@ -84,7 +84,7 @@ export default () => {
                           sx={{
                             "& .MuiRating-icon": {
                               color: "#999",
-                              width: {xs:".9em", md:"1em"},
+                              width: { xs: ".9em", md: "1em" },
                             },
                           }}
                         />

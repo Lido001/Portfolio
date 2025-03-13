@@ -12,7 +12,6 @@
 }
 
 
-
 :root{
   --bs-custom-aboutbg: hsla(0, 0%, 100%, .08);
   --bs-custom-service-li-num-bg: rgba(255, 255, 255, 0.03);
@@ -57,6 +56,16 @@
   word-wrap: break-word;
   font-weight: 400;
 }
+.custom-link{
+  text-decoration: none;
+  color: white;
+}
+.custom-li-link{
+  color: var(--bs-custom-serviceclr);
+}
+.custom-li-link:hover{
+  color:white;
+}
 .list:hover{
   letter-spacing: 3.5px;
   transition: 2s;
@@ -74,33 +83,7 @@
   letter-spacing: 3.5px;
   color: #fff;
 }
-/* .avatar-img{ */
-    /* position: absolute; */
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    animation: morph 8s ease-in-out 1s infinite;
-    background-blend-mode: multiply;
-    box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    overflow: hidden;
-    z-index: 1;
-}
-@keyframes morph{
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-50% {
-  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-}
-100% {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-} */
+
 
 .avatar-wrapper {
   position: relative;
@@ -140,18 +123,6 @@
 }
 
 
-/* .journey::before{
-    content: "";
-    position: absolute;
-    height: 18px;
-    width: 18px;
-    background: #111;
-    border-radius: 100%;
-    border: 1px solid #ccc;
-    left: -9px;
-    top: 16px;
-
-} */
 
 .journey {
   position: relative;

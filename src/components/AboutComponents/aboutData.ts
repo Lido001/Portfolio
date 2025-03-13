@@ -1,5 +1,15 @@
 
 import img from '../../assets/images/annie-spratt-MChSQHxGZrQ-unsplash.jpg';
+import web_design from '../../assets/images/DeWatermark.ai_1741530738264.png';
+import web_development from '../../assets/images/web_development.png';
+import responsive_design from '../../assets/images/Responsive_Design1.png';
+import software_development from '../../assets/images/software_development.png';
+import seo_optimisation from '../../assets/images/seo_optimisation.png';
+import site_optimisation from '../../assets/images/site_optimisation.png';
+import tamilloft from '../../assets/images/Screenshot 2025-02-11 213241.png';
+import portfolio from '../../assets/images/portfolio.png';
+import dashboard from '../../assets/images/dashboard.png';
+
 
 
 
@@ -17,10 +27,13 @@ interface Testimonials{
 interface Service{
   title: string;
   description: string; 
+  image : string;
 }
 interface Project{
   title: string;
   description: string; 
+  category: string;
+  image: string
 }
 interface News{
   title: string;
@@ -71,37 +84,43 @@ const testimonials: Testimonials[] =[
 const services: Service[] = [
   {
     title: "Web Design",
-    description: "Web development is the most famous job in the world and it is very interesting...",   
+    description: "Web development is the most famous job in the world and it is very interesting...",
+    image: web_design,   
   },
   {
     title: "Web Development",
-    description: "Web development is the most famous job in the world and it is very interesting...",   
+    description: "Web development is the most famous job in the world and it is very interesting...", 
+    image: web_development,  
   },
   {
-    title: "Mobile App",
-    description: "Web development is the most famous job in the world and it is very interesting...",   
+    title: "Responsive Design",
+    description: "Web development is the most famous job in the world and it is very interesting...",  
+    image: responsive_design, 
   },
   {
-    title: "Ecommerce",
-    description: "Web development is the most famous job in the world and it is very interesting...",   
+    title: "Software Development",
+    description: "Web development is the most famous job in the world and it is very interesting...", 
+    image: software_development,  
   },
   {
     title: "SEO Optimization",
-    description: "Web development is the most famous job in the world and it is very interesting...",   
+    description: "Web development is the most famous job in the world and it is very interesting...",
+    image: seo_optimisation,   
   },
   {
     title: "Site Optimization",
     description: "Web development is the most famous job in the world and it is very interesting...",
+    image: site_optimisation,
   },
 ];
 
 const projects: Project [] = [
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
-  {title:"React Project", description:"Web development is the most famous job in the world and it is very interesting...",},
+  { title: "React Dashboard", description: "A web app built with React and TypeScript.", category: "Web Apps" ,image: dashboard, },
+  // { title: "E-commerce Site", description: "An online shopping platform using React.", category: "Web Apps" ,image: tamilloft, },
+  // { title: "Mobile UI Design", description: "A sleek and modern UI/UX design.", category: "UI/UX Designs" ,image: tamilloft, },
+  { title: "Brand Identity", description: "Creative branding project for a startup.", category: "Branding",image: tamilloft, },
+  { title: "Portfolio Website", description: "Personal portfolio showcasing projects.", category: "Web Apps" ,image: portfolio, },
+  // { title: "UX Wireframing", description: "Detailed wireframes for a client project.", category: "UI/UX Designs" ,image: tamilloft, },
 
 ];
 

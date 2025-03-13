@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <motion.div className="text-white"
-    initial={{ opacity: 0, x: -125 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1,ease: "easeInOut" }}>
+    <motion.div
+      className="text-white"
+      initial={{ opacity: 0, x: -125 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <section className="lg:px-32 lg:py-24 p-6 pt-24">
         <div className="w-full flex flex-col  gap-y-10">
           <div>

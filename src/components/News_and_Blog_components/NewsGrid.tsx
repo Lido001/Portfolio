@@ -6,28 +6,6 @@ const NewsGrid = () => {
     <div>
       <section className="flex flex-col gap-y-10">
         {news.map((news, index) => (
-          // <div
-          //   key={index}
-          //   className={`flex items-center justify-between gap-x-6 rounded-lg bg-(--bs-custom-projectgrid-bg) card ${index % 2 === 1 ? "flex-row-reverse" : "flex-row"}`}>
-          //   <div className={`overflow-hidden ${index % 2 ===1 ? "rounded-e-lg" : "rounded-s-lg"}`}>
-          //   <img className="card-img transition-transform duration-300 ease-in-out" key={index} src={news.image} alt={`Grid ${index}`}  />
-          //   </div>
-
-          //   <div className="flex flex-col gap-y-14 p-4">
-          //     <div className="flex flex-col gap-y-4">
-          //       <h1 className="text-2xl font-semibold font-custom-montserrat tracking-wide">
-          //         {news.title}
-          //       </h1>
-          //       <p className="text-base font-custom-mulish font-medium leading-7 tracking-wider text-(--bs-custom-serviceclr)">
-          //         {news.description}
-          //       </p>
-          //     </div>
-          //     <div>
-          //       <Readmore />
-          //     </div>
-          //   </div>
-          // </div>
-
           <div
             key={index}
             className={`flex flex-col lg:flex-row items-center justify-between gap-y-6 lg:gap-x-6 rounded-lg bg-(--bs-custom-projectgrid-bg) card ${
@@ -38,8 +16,8 @@ const NewsGrid = () => {
             <div
               className={`overflow-hidden w-full lg:w-1/2 ${
                 index % 2 === 1
-                  ? "rounded-t-lg lg:rounded-e-lg lg:rounded-s-none"
-                  : "rounded-t-lg lg:rounded-s-lg lg:rounded-e-none"
+                  ? "rounded-t-lg lg:rounded-t-none lg:rounded-tr-lg lg:rounded-e-lg lg:rounded-s-none"
+                  : "rounded-t-lg lg:rounded-t-none lg:rounded-tl-lg lg:rounded-s-lg lg:rounded-e-none"
               }max-h-64 md:max-h-80 lg:max-h-96`}
             >
               <img

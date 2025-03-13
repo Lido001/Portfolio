@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 
 const News = () => {
   return (
-    <motion.div className="text-white"
-    initial={{opacity: 0, x: -125}}
-    animate={{opacity: 1, x: 0}}
-    transition={{duration:1,ease:"easeInOut"}}>
+    <motion.div
+      className="text-white"
+      initial={{ opacity: 0, x: -125 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <section className="lg:px-32 lg:py-24 p-6 pt-24">
         <div className="w-full flex flex-col  gap-y-10">
           <div>
@@ -15,15 +17,17 @@ const News = () => {
             </span>
           </div>
           <div className="mb-12">
-            <h3 className="text-3xl font-custom-montserrat font-extrabold leading-[1.2px] tracking-wide">Latest News</h3>
+            <h3 className="text-3xl font-custom-montserrat font-extrabold leading-[1.2px] tracking-wide">
+              Latest News
+            </h3>
           </div>
         </div>
         <div>
-          <NewsGrid/>
+          <NewsGrid />
         </div>
       </section>
     </motion.div>
-  )
-}
+  );
+};
 
-export default News
+export default News;

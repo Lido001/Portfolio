@@ -14,32 +14,6 @@ const WorkJourney = () => {
           <h1 className="font-custom-montserrat text-xl font-bold">
             Education
           </h1>
-          {/* <div className="flex flex-col gap-y-12 border-l-1">
-            {workStages.map((stage, index) => (
-              <ul key={index}>
-                <motion.li
-                  className="flex items-center journey relative"
-                  animate={isFirstInView ? { opacity: 1, x: 0 } : {}}
-                  initial={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.5, delay: index * 0.3 }}
-                >
-                  <div className="w-full">
-                    <span className="py-3 px-6 rounded-full bg-(--bs-custom-aboutbg) text-(--bs-custom-aboutclr) ms-6">
-                      {stage.time}
-                    </span>
-                  </div>
-                  <div className="w-full">
-                    <h3 className="text-wrap text-base font-semibold font-custom-montserrat lg:mb-0.5">
-                      {stage.title}
-                    </h3>
-                    <span className="text-(--bs-custom-aboutclr) text-sm font-custom-mulish font-normal tracking-wide">
-                      {stage.description}
-                    </span>
-                  </div>
-                </motion.li>
-              </ul>
-            ))}
-          </div> */}
           <div className="flex flex-col gap-y-12 border-l-2 border-gray-300">
             {workStages.map((stage, index) => (
               <ul key={index} className="relative">
