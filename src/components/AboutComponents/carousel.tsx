@@ -43,7 +43,7 @@ export default () => {
                 <div className="flex flex-col gap-y-6 md:gap-y-12 py-10 px-3 rounded-lg bg-(--bs-custom-aboutbg)">
                   <div className="text-center md:px-6">
                     <p className="w-full text-xs md:text-sm/8 tracking-(--tracking-2) font-custom-mulish font-normal text-custom-aboutcolor">
-                      {slide.comment}
+                      "{slide.comment}"
                     </p>
                   </div>
                   <div className="flex items-center justify-between md:px-10 lg:px-4 xl:px-10 px-2">

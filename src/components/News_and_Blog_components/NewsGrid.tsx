@@ -8,7 +8,7 @@ const NewsGrid = () => {
         {news.map((news, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row items-center justify-between gap-y-6 lg:gap-x-6 rounded-lg bg-(--bs-custom-projectgrid-bg) card ${
+            className={`group flex flex-col lg:flex-row items-center justify-between gap-y-6 lg:gap-x-6 rounded-lg bg-(--bs-custom-projectgrid-bg) card transition duration-300 shadow-[0_12px_16px_-1px_rgba(255,255,255,0.1),0_12px_16px_-2px_rgba(255,255,255,0.1)] hover:translate-y-[-8px] lg:hover:bg-red-500 ${
               index % 2 === 1 ? "lg:flex-row-reverse" : ""
             }`}
           >
@@ -33,12 +33,12 @@ const NewsGrid = () => {
                 <h1 className="text-2xl font-semibold font-custom-montserrat tracking-wide">
                   {news.title}
                 </h1>
-                <p className="text-base font-custom-mulish font-medium leading-7 tracking-wider text-(--bs-custom-serviceclr)">
+                <p className="text-base font-custom-mulish font-medium leading-7 tracking-wider text-(--bs-custom-serviceclr) group-hover:text-white transition duration-300">
                   {news.description}
                 </p>
               </div>
               <div>
-                <Readmore />
+                <Readmore link={news.link} />
               </div>
             </div>
           </div>

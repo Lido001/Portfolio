@@ -104,11 +104,11 @@ const ContactForm = () => {
               <span className="relative z-10 transition-all duration-300 group-hover:text-white flex items-center gap-2 justify-center">
                 {buttonText}
                 <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-75 ease-in-out">
-                  <GrSend />
+                  <GrSend className="text-white" />
                 </span>
               </span>
               {/* Background Effect */}
-              <span className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-center"></span>
+              <span className="absolute inset-0 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-center"></span>
             </button>
           </div>
         </form>

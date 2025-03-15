@@ -52,7 +52,7 @@ const SwipeButton: React.FC = () => {
         ${isDownloading ? "opacity-50 pointer-events-none" : ""}`}
       >
         {/* Background Swipe Effect */}
-        <span className="absolute inset-0 bg-black transform -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0 will-change-transform"></span>
+        <span className="absolute inset-0 bg-red-500 transform -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0 will-change-transform"></span>
 
         {/* Button Content */}
         <span className="relative z-10 flex items-center gap-2 transition-colors duration-500 ease-in-out group-hover:text-white">

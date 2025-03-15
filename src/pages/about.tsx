@@ -2,12 +2,15 @@ import FizzyButton from "../components/AboutComponents/Fizzybutton";
 import ProgressBar from "../components/AboutComponents/ProgressBar";
 import WorkJourney from "../components/AboutComponents/WorkJourney";
 import { Skills } from "../components/AboutComponents/aboutData";
-import { MdArrowRight } from "react-icons/md";
+// import { MdArrowRight } from "react-icons/md";
 import Carousel from "../components/AboutComponents/carousel";
 import { motion } from "framer-motion";
 import aboutimg from "../assets/images/about.jpg";
+import SkillsSet from "../components/AboutComponents/skillsSet";
+import { useState } from "react";
 
 const About = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
   return (
     <motion.div
       className="text-white lg:px-3"
@@ -136,8 +139,8 @@ const About = () => {
           </div>
         </div>
       </header>
-      <div className="xl:flex-row flex justify-between flex-col p-5 py-18 gap-y-14 lg:gap-y-20 lg:p-12 w-full bg-black">
-        <div className="w-full xl:pr-12 flex flex-col lg:gap-y-12 gap-y-5">
+      <div className="flex justify-between flex-col p-5 py-18 gap-y-14 lg:gap-y-20 lg:p-12 w-full bg-black">
+        <div className="w-full xl:px-12 flex flex-col lg:gap-y-12 gap-y-5">
           <h1 className="font-semibold text-2xl font-custom-montserrat">
             Programming Skills
           </h1>
@@ -149,11 +152,11 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className="w-full xl:pl-12 flex flex-col lg:gap-y-12 gap-y-5">
+        <div className="w-full xl:px-12 flex flex-col lg:gap-y-12 gap-y-5">
           <h1 className="font-semibold text-2xl font-custom-montserrat">
-            Language Skills
+            Languages
           </h1>
-          <div className="flex flex-col gap-y-5">
+          <div className="flex flex-col gap-y-5 lg:pb-4">
             {Skills.languageSkills.map((item, index) => (
               <div key={index}>
                 <ProgressBar
@@ -166,69 +169,33 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 lg:m-12 lg:py-12 p-5 my-12">
-        <div>
-          <h1 className="font-custom-montserrat text-2xl font-semibold mb-3">
-            Knowledges
-          </h1>
-          <div className=" place-items-start flex flex-col gap-y-2">
-            {Skills.knowledges.map((item, index) => (
-              <div className="flex items-center gap-x-3">
-                <li className="list-none">
-                  <MdArrowRight className="text-2xl" />
-                </li>
-                <li
-                  key={index}
-                  className="list-none font-custom-mulish text-custom-aboutcolor"
-                >
-                  {item.application}
-                </li>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h1 className="font-custom-montserrat text-2xl font-semibold mb-3">
-            Interests
-          </h1>
-          <div className="place-items-start  flex flex-col gap-y-2">
-            {Skills.interests.map((item, index) => (
-              <div className="flex items-center gap-x-3">
-                <li className="list-none">
-                  <MdArrowRight className="text-2xl" />
-                </li>
-                <li
-                  key={index}
-                  className="list-none font-custom-mulish text-custom-aboutcolor"
-                >
-                  {item.technologies}
-                </li>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h1 className="font-custom-montserrat text-2xl font-semibold mb-3">
-            Interests
-          </h1>
-          <div className="place-items-start flex flex-col gap-y-2">
-            {Skills.interests.map((item, index) => (
-              <div className="flex items-center gap-x-3">
-                <li className="list-none">
-                  <MdArrowRight className="text-2xl" />
-                </li>
-                <li
-                  key={index}
-                  className="list-none font-custom-mulish text-custom-aboutcolor"
-                >
-                  {item.technologies}
-                </li>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <div className="lg:px-28 py-12 px-6">
+        <h1 className="font-custom-montserrat text-4xl font-semibold mb-3 text-center pt-6">
+          My Technical <span className="text-red-500">Skills</span>
+        </h1>
 
+        <ul className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-12 text-(--bs-custom-serviceclr) pt-6">
+          {["All", "Front End", "Back End"].map((category) => (
+            <li key={category}>
+              <button
+                onClick={() => setSelectedCategory(category)}
+                className={`relative transition-all duration-300 pb-1
+    ${
+      selectedCategory === category
+        ? "text-white translate-y-[-2px] after:scale-x-100"
+        : "text-gray-400 hover:text-white hover:translate-y-[-2px] after:scale-x-0 hover:cursor-pointer"
+    }
+    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-red-500 after:w-full
+    after:transition-transform after:duration-300 after:ease-in-out after:origin-left
+    hover:after:scale-x-100`}
+              >
+                {category}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <SkillsSet selectedCategory={selectedCategory} />
+      </div>
       <div>
         <WorkJourney />
       </div>

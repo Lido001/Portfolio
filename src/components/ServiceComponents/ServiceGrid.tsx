@@ -7,13 +7,13 @@ const ServiceGrid = () => {
       {services.map((service, index) => (
         <div
           key={index}
-          className="card flex flex-col bg-(--bs-custom-service-li-bg) rounded-lg transition duration-300 pb-5 justify-between h-[29rem]"
+          className="group card flex flex-col bg-(--bs-custom-service-li-bg) rounded-lg transition duration-300 pb-5 justify-between h-[29rem] shadow-[0_12px_16px_-1px_rgba(255,255,255,0.1),0_12px_16px_-2px_rgba(255,255,255,0.1)] hover:translate-y-[-8px] hover:bg-red-500"
         >
           <div className="rounded-t-lg overflow-hidden h-3/4">
             <img
               className="object-contain w-lg card-img transition-transform duration-300 ease-in-out"
               src={service.image}
-              alt=""
+              alt={service.title}
             />
           </div>
           <div className="flex flex-col p-5 gap-y-4">
@@ -23,11 +23,11 @@ const ServiceGrid = () => {
               </h3>
             </div>
             <div>
-              <p className="text-base font-custom-mulish text-(--bs-custom-serviceclr)">
+              <p className="text-base font-custom-mulish text-(--bs-custom-serviceclr group-hover:text-white">
                 {service.description}
               </p>
             </div>
-            <Readmore />
+            <Readmore link={service.link} />
           </div>
         </div>
       ))}
