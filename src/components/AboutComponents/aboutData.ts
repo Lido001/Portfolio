@@ -10,6 +10,7 @@ import software_development from '../../assets/images/software_development.png';
 import seo_optimisation from '../../assets/images/seo_optimisation.png';
 import site_optimisation from '../../assets/images/site_optimisation.png';
 import tamilloft from '../../assets/images/Screenshot 2025-02-11 213241.png';
+import todo_App from "../../assets/images/Screenshot 2025-05-10 231750..png";
 import portfolio from '../../assets/images/portfolio.png';
 import dashboard from '../../assets/images/dashboard.png';
 import html from '../../assets/images/skills_img/html.svg';
@@ -172,12 +173,12 @@ const services: Service[] = [
 ];
 
 const projects: Project [] = [
-  { title: "React Dashboard", description: "A web app built with React and TypeScript.", category: "Web Apps", link: "https://news-website-pied-iota.vercel.app/", image: dashboard, },
+  { title: "To-do APP", description: "A simple to-do list application built with Next JS.", link: "https://advanced-todo-beige.vercel.app/", category: "Web Apps", image: todo_App, },
+  { title: "Portfolio Website", description: "Personal portfolio showcasing projects.", link: "https://portfolio-ebon-three-57.vercel.app/", category: "Web Apps" ,image: portfolio, },
   // { title: "E-commerce Site", description: "An online shopping platform using React.", category: "Web Apps" ,image: tamilloft, },
   // { title: "Mobile UI Design", description: "A sleek and modern UI/UX design.", category: "UI/UX Designs" ,image: tamilloft, },
   { title: "Brand Identity", description: "Creative branding project for a startup.", link: "https://client-website-olive.vercel.app/", category: "Branding",image: tamilloft, },
-  { title: "Portfolio Website", description: "Personal portfolio showcasing projects.", link: "https://portfolio-ebon-three-57.vercel.app/", category: "Web Apps" ,image: portfolio, },
-  // { title: "UX Wireframing", description: "Detailed wireframes for a client project.", category: "UI/UX Designs" ,image: tamilloft, },
+  { title: "React Dashboard", description: "A web app built with React and TypeScript.", category: "Web Apps", link: "https://news-website-pied-iota.vercel.app/", image: dashboard, },
 
 ];
 

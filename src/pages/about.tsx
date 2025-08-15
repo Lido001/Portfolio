@@ -2,10 +2,12 @@ import FizzyButton from "../components/AboutComponents/Fizzybutton";
 import ProgressBar from "../components/AboutComponents/ProgressBar";
 import WorkJourney from "../components/AboutComponents/WorkJourney";
 import { Skills } from "../components/AboutComponents/aboutData";
-// import { MdArrowRight } from "react-icons/md";
 import Carousel from "../components/AboutComponents/carousel";
 import { motion } from "framer-motion";
-import aboutimg from "../assets/images/about.jpg";
+// import aboutimg from "../assets/images/1746630177847....jpg";
+// import aboutimg from "../assets/images/1746970788356.....jpg";
+import aboutimg from "../assets/images/edit1..png";
+// import aboutimg from "../assets/images/profile..png";
 import SkillsSet from "../components/AboutComponents/skillsSet";
 import { useState } from "react";
 
@@ -30,9 +32,9 @@ const About = () => {
               About Me
             </h3>
           </div>
-          <div className="h-auto lg:mb-12 mb-6">
+          {/* <div className="h-auto lg:mb-12 mb-6">
             <img src={aboutimg} alt="" />
-          </div>
+          </div> */}
           <div className="lg-mb-12">
             <h3 className="text-2xl font-bold font-custom-montserrat mb-1">
               LIDO SHANFEAR

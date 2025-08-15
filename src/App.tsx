@@ -7,11 +7,13 @@ import Home from "./pages/home";
 import Portfolio from "./pages/Portfolio";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import SmoothScrollProvider from "./components/smoothScrollProvider";
 
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Check if the page was reloaded using performance API
@@ -34,11 +36,21 @@ function App() {
 
   return (
     <>
-      <div className="lg:flex bg-(--bs-custom-body) justify-center scroll-smooth">
+      <div className="lg:flex bg-(--bs-custom-body) justify-center">
         <div>
           <SideBar />
         </div>
-        <div className="w-full h-screen overflow-y-auto">
+        <div
+          ref={scrollRef}
+          style={{ overscrollBehavior: "contain" }}
+          className="w-full h-screen overflow-y-auto [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -49,6 +61,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <SmoothScrollProvider scrollContainer={scrollRef} />
     </>
   );
 }

@@ -34,7 +34,7 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ selectedCategory }) => {
                   {project.description}
                 </p>
               </div>
-              <Readmore link={project.link}/>
+              <Readmore link={project.link} />
             </div>
           </div>
         </div>

@@ -20,10 +20,10 @@ const SwipeButton: React.FC = () => {
       if (!result.isConfirmed) return; // If user cancels, stop here
     }
 
-    const pdfUrl = "/Lido_CV.pdf"; // File should be in 'public' folder
+    const pdfUrl = "/Lido_Resume.pdf"; // File should be in 'public' folder
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Lido_CV.pdf";
+    link.download = "Lido_Resume.pdf";
 
     setIsDownloading(true);
     setDownloadComplete(false);
@@ -66,7 +66,9 @@ const SwipeButton: React.FC = () => {
               <span>{isDownloading ? "Downloading..." : "Download CV"}</span>
               <Download
                 className={`w-5 h-5 ${
-                  isDownloading ? "animate-bounce" : "opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  isDownloading
+                    ? "animate-bounce"
+                    : "opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 }`}
               />
             </>
@@ -78,7 +80,3 @@ const SwipeButton: React.FC = () => {
 };
 
 export default SwipeButton;
-
-
-
-

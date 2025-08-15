@@ -64,7 +64,12 @@ const WorkJourney = () => {
                     <h3 className="text-wrap text-base font-semibold font-custom-montserrat lg:mb-0.5">
                       {stage.title}
                     </h3>
-                    <h6 className="flex items-center gap-x-0.5 text-wrap text-sm text-gray-300 font-medium font-custom-montserrat mb-1"><span><FaMapMarkerAlt /></span>{stage.location}</h6>
+                    <h6 className="flex items-center gap-x-0.5 text-wrap text-sm text-gray-300 font-medium font-custom-montserrat mb-1">
+                      <span>
+                        <FaMapMarkerAlt />
+                      </span>
+                      {stage.location}
+                    </h6>
                     <span className="text-(--bs-custom-aboutclr) text-sm font-custom-mulish font-normal tracking-wide">
                       {stage.description}
                     </span>
