@@ -6,7 +6,7 @@ import Carousel from "../components/AboutComponents/carousel";
 import { motion } from "framer-motion";
 // import aboutimg from "../assets/images/1746630177847....jpg";
 // import aboutimg from "../assets/images/1746970788356.....jpg";
-import aboutimg from "../assets/images/edit1..png";
+// import aboutimg from "../assets/images/edit1..png";
 // import aboutimg from "../assets/images/profile..png";
 import SkillsSet from "../components/AboutComponents/skillsSet";
 import { useState } from "react";
