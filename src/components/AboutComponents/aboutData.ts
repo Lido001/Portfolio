@@ -90,15 +90,16 @@ const readmore: ReadMore [] = [
 
 const workStages: WorkStage = {
   education: [
-    { time: "2011-2017", title: "Little Flower Matriculation School", description: "Completed My High School" },
-    { time: "2018-2020", title: "St.Mary Goretty Higher Secondary School", description: "Completed My Higher Secondary School " },
-    { time: "2021-2025", title: "Cape Institute of Technology", description: "Completed My Bachelor's Degree" },
-    { time: "2023-Now", title: "RexCoders Academy", description: "Gained experience in React and TS." },
+    { time: "2011-2017", title: "Little Flower Matriculation School", description: "Completed my high school education with strong foundations in Mathematics, Science, and English. Actively participated in cultural activities and group projects." },
+    { time: "2018-2020", title: "St.Mary Goretty Higher Secondary School", description: "Pursued Higher Secondary with Computer Science and Mathematics. Engaged in coding basics, science fairs, and inter-school competitions. " },
+    { time: "2021-2025", title: "Cape Institute of Technology", description: "Pursuing Bachelor's Degree in Engineering. Learned Data Structures, DBMS, Web Development, and Cloud. Worked on projects and hackathons to gain practical exposure." },
+    { time: "2023-Now", title: "RexCoders Academy", description: "Focused on React.js, TypeScript, and Full Stack Development. Built real-world apps like job boards and task managers. Mentored peers and contributed to team projects." },
   ],
   experience:[
-    { time: "2022-2022", title: "Android App Development Intern,",location: "NSIC, Chennai.", description: "Gained experience in Flutter Development" },
-    { time: "2024-2024", title: "Front-End development Intern,",location: "RexCoders Academy, Paalpannai.", description: "Gained Experience in FrontEnd Development" },
-    { time: "2024-2025", title: "Full Stack Development",location: "RexCoders Academy, Paalpannai. ", description: "Gained Experience in Full Stack Development" },
+    { time: "2022-2022", title: "Android App Development Intern,",location: "NSIC, Chennai.", description: "Gained hands-on experience in Flutter and Dart. Built small apps, worked with Firebase, and learned about mobile UI design and API integration." },
+    { time: "2024-2024", title: "Front-End development Intern,",location: "RexCoders Academy, Paalpannai.", description: "Developed responsive web components using React and TailwindCSS. Integrated APIs with backend, optimized performance, and practiced Git workflows." },
+    { time: "2024-2025", title: "Full Stack Development",location: "RexCoders Academy, Paalpannai. ", description: "Worked on MERN stack applications. Built authentication systems, CRUD apps, and dashboards. Gained skills in Node.js, Express, MongoDB Atlas, and deployment (Vercel/Netlify)." },
+    { time: "2025-Present", title: "Software Developer",location: "Team Tweaks Technologies, Chennai. ", description: "Working as a Software Developer specializing in the MERN stack with a strong focus on Node.js and backend services. Responsible for building and maintaining scalable APIs, implementing authentication and role-based access, and optimizing database queries in MongoDB. Collaborating with cross-functional teams to deliver production-ready applications, integrating third-party services, and ensuring secure deployments on cloud platforms like AWS and Vercel. Actively contributing to code reviews, agile sprints, and best practices for clean and maintainable code." },
   ],
 };
 

@@ -4,10 +4,7 @@ import WorkJourney from "../components/AboutComponents/WorkJourney";
 import { Skills } from "../components/AboutComponents/aboutData";
 import Carousel from "../components/AboutComponents/carousel";
 import { motion } from "framer-motion";
-// import aboutimg from "../assets/images/1746630177847....jpg";
-// import aboutimg from "../assets/images/1746970788356.....jpg";
-// import aboutimg from "../assets/images/edit1..png";
-// import aboutimg from "../assets/images/profile..png";
+import aboutimg from "../assets/images/Profile-white.jpg";
 import SkillsSet from "../components/AboutComponents/skillsSet";
 import { useState } from "react";
 
@@ -22,27 +19,34 @@ const About = () => {
     >
       <header className="lg:px-28 mb-12 flex flex-col justify-center px-6">
         <div className="flex flex-col justify-self-start pt-16 lg:w-full">
-          <div className="my-6">
-            <span className="px-2 py-3 text-xs bg-custom-aboutbg text-custom-aboutcolor font-custom-mulish font-semibold">
-              ABOUT
-            </span>
+          <div className="flex justify-between items-center gap-x-4 lg:items-stretch">
+            <div className="flex flex-col justify-between">
+              <div>
+                <div className="md:my-6 my-3">
+                  <span className="px-2 py-3 text-xs bg-custom-aboutbg text-custom-aboutcolor font-custom-mulish font-semibold">
+                    ABOUT
+                  </span>
+                </div>
+                <div className="md:mb-12 mb-6">
+                  <h3 className="font-custom-montserra text-2xl lg:text-3xl font-extrabold tracking-wide">
+                    About Me
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <h3 className=" text-xl lg:text-2xl font-bold font-custom-montserrat text-nowrap mb-1">
+                  LIDO SHANFEAR
+                </h3>
+                <span className="text-custom-aboutcolor font-custom-mulish text-base">
+                  Web Developer
+                </span>
+              </div>
+            </div>
+            <div className="lg:w-64 w-52 h-auto pt-5">
+              <img className="rounded-full" src={aboutimg} alt="" />
+            </div>
           </div>
-          <div className="mb-12">
-            <h3 className="font-custom-montserra text-3xl font-extrabold tracking-wide">
-              About Me
-            </h3>
-          </div>
-          {/* <div className="h-auto lg:mb-12 mb-6">
-            <img src={aboutimg} alt="" />
-          </div> */}
-          <div className="lg-mb-12">
-            <h3 className="text-2xl font-bold font-custom-montserrat mb-1">
-              LIDO SHANFEAR
-            </h3>
-            <span className="text-custom-aboutcolor font-custom-mulish text-base">
-              Web Developer
-            </span>
-          </div>
+
           <div className="border-1 border-custom-color border-bottom lg:my-6 my-5"></div>
           <div className="flex flex-col gap-5">
             <p className="text-custom-aboutcolor custom-p">
