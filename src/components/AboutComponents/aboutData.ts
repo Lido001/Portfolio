@@ -31,6 +31,12 @@ import vs_code from '../../assets/images/skills_img/vc_code.png';
 import git from '../../assets/images/skills_img/git.svg';
 import postman from '../../assets/images/skills_img/postman.png';
 import github from '../../assets/images/skills_img/github.png';
+import certificate1 from "../../assets/images/certificates/1-05b423c4-16c6-4174-a68a-5946e81b3d9a (1)_page-0001.jpg";
+import certificate2 from "../../assets/images/certificates/1-05b423c4-16c6-4174-a68a-5946e81b3d9a_page-0001.jpg";
+import certificate3 from "../../assets/images/certificates/1-4cf89ec1-b28c-490e-a50d-93d2297a8507_page-0001.jpg";
+import certificate4 from "../../assets/images/certificates/1-652c58a9-e3e5-49bd-bf47-c18d1c80fdbf_page-0001.jpg";
+import certificate5 from "../../assets/images/certificates/1-db35e9ce-83da-4952-b2c9-b1adce690473_page-0001.jpg";
+
 
 
 
@@ -49,10 +55,11 @@ interface WorkStage {
   }[];
 };
 interface Testimonials{
-  comment: string;
-  title: string;
-  position: string; 
-  rating: number;
+  // comment: string;
+  // title: string;
+  // position: string; 
+  // rating: number;
+  image: string;
 }
 interface Service{
   title: string;
@@ -106,31 +113,38 @@ const workStages: WorkStage = {
 
 
 const testimonials: Testimonials[] =[
-  { comment: "Lido delivered an amazing web application for our business! The UI/UX is smooth, and the performance is outstanding. Highly recommend!", 
-    title: "Emily R.",
-    position: "Startup Founder",
-    rating: 4.5,
-  },
-  { comment: "The portfolio website Lido built for me is sleek, modern, and exactly what I needed to showcase my work. Great attention to detail!", 
-    title: "James D.",
-    position: "Graphic Designer",
-    rating: 3.0,
-  },
-  { comment: "Super impressed with the e-commerce website! The user experience is seamless, and the design is top-notch. Will definitely work with Lido again!", 
-    title: " Sarah K.",
-    position: "Online Store Owner",
-    rating: 3.5,
-  },
-  { comment: "Lido’s creativity in branding is exceptional! The design he created truly represents our brand identity and resonates with our audience.", 
-    title: "Mark T.",
-    position: "Marketing Director",
-    rating: 4.0,
-  }, 
-  { comment: "Lido built a high-performance React dashboard for our analytics. The interface is intuitive, and the functionalities are exactly what we needed!", 
-    title: "Nathan P.",
-    position: "Data Analyst",
-    rating: 5.0,
-  },             
+  // { comment: "Lido delivered an amazing web application for our business! The UI/UX is smooth, and the performance is outstanding. Highly recommend!", 
+  //   title: "Emily R.",
+  //   position: "Startup Founder",
+  //   rating: 4.5,
+  // },
+  // { comment: "The portfolio website Lido built for me is sleek, modern, and exactly what I needed to showcase my work. Great attention to detail!", 
+  //   title: "James D.",
+  //   position: "Graphic Designer",
+  //   rating: 3.0,
+  // },
+  // { comment: "Super impressed with the e-commerce website! The user experience is seamless, and the design is top-notch. Will definitely work with Lido again!", 
+  //   title: " Sarah K.",
+  //   position: "Online Store Owner",
+  //   rating: 3.5,
+  // },
+  // { comment: "Lido’s creativity in branding is exceptional! The design he created truly represents our brand identity and resonates with our audience.", 
+  //   title: "Mark T.",
+  //   position: "Marketing Director",
+  //   rating: 4.0,
+  // }, 
+  // { comment: "Lido built a high-performance React dashboard for our analytics. The interface is intuitive, and the functionalities are exactly what we needed!", 
+  //   title: "Nathan P.",
+  //   position: "Data Analyst",
+  //   rating: 5.0,
+  // },    
+  
+  {image: certificate1,},
+  {image: certificate2,},
+  {image: certificate3,},
+  {image: certificate4,},
+  {image: certificate5,},
+
                
 ];
 

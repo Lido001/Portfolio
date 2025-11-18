@@ -111,7 +111,7 @@ const SideBar = () => {
               } flex items-center cursor-pointer px-2.5 py-3`}
             >
               <PiBriefcaseFill />
-              <span className="ms-2">Portfolio</span>
+              <span className="ms-2">My Projects</span>
             </li>
             <li
               onClick={() => {
